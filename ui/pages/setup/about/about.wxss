@@ -1,0 +1,47 @@
+page{
+    background: #f5f6fa;
+}
+.img{
+  display:flex; 
+  justify-content: center;
+  padding: 18rpx 0 18rpx 0;
+}
+.img image{
+  height:80rpx;
+  width: 80rpx;
+}
+.main{
+  background-color: #fff;
+  height: 205rpx;
+  border-bottom:1rpx solid #d9d9d9 ;
+}
+.hit{
+  text-align: center;
+  font-size: 30rpx;
+}
+.hint{
+  font-size: 25rpx;
+  color: #9b9b9b;
+  text-align: center;
+}
+.left{
+  color: black;
+  font-size: 26rpx;
+}
+.right{
+  font-size: 30rpx;
+}
+.about-graySpace{
+  background: #f5f6fa;
+  min-height: 10rpx;
+}
+.item-avatar-xs{
+  padding-left: 10rpx;
+}
+.title{
+  font-family: "微软雅黑";
+  font-size: 30rpx;
+}
+.weui-cell{
+  padding: 30rpx;
+}

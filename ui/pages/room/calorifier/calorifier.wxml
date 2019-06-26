@@ -1,0 +1,66 @@
+<!--pages/room/calorifier/calorifier.wxml-->
+<view id='title' bindtap="go_details">设备信息 > </view>
+<view class='top_opion'>
+  <view>当前温度</view>
+  <!-- 当前温度值 -->
+  <view>{{indoor_T}}</view>
+</view>
+<view class='top_opion'>
+  <view>设备温度</view>
+  <!-- 设备温度值 -->
+  <view>{{facility_T}}</view>
+</view>
+<view class='{{flags ? "top_opion":"top_opion2"}}'>
+  <view>设备开关</view>
+  <switch/>
+</view>
+
+<view class='matter'>
+  <view class='{{flags ? "masterView":"masterView2"}}'>
+    <view bindtap='showtip'>
+      <view></view>
+      <view>电源键</view>
+    </view>
+    <view>
+      <view></view>
+      <view>湿度+</view>
+    </view>
+    <view>
+      <view></view>
+      <view>湿度-</view>
+    </view>
+    <view>
+      <view></view>
+      <view>开水</view>
+    </view>
+    <view>
+      <view></view>
+      <view>自定义</view>
+    </view>
+  </view>
+</view>
+
+<view class='{{flags ? "notbe_button2":"notbe_button"}}'>
+  <view></view>
+</view>
+
+
+
+<view class='bottom'>
+  <view bindtap='cut_command'>
+    <view></view>
+    <view>切换类型</view>
+  </view>
+  <view bindtap='go_setTimes'>
+    <view></view>
+    <view>定时</view>
+  </view>
+  <view bindtap='voltameter'>
+    <view></view>
+    <view>计量</view>
+  </view>
+  <view bindtap='set_up'>
+    <view></view>
+    <view>设置</view>
+  </view>
+</view>

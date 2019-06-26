@@ -1,0 +1,71 @@
+<!--   房间  模块  -->
+<view class="swiper-tab">
+  <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex;width:90%">
+    <view wx:for='{{roomDatas}}' wx:key="" wx:for-item='rooms' wx:for-index='index' class="swiper-tab-list {{currentTab==index ? 'on' : ''}}" style='width:50px;display: inline-block"' data-current="{{index}}" bindtap="swichNav">{{rooms.name}}</view>
+  </scroll-view>
+  <view class='img-add' bindtap='addRoom'>
+    <image src='/img/设置页面/denglu-icon.png '></image>
+  </view>
+</view>
+<!-- 
+data-img :自定义img
+ -->
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindChange">
+  <swiper-item class="room" id='roomP1' wx:for='{{roomDatas}}'>
+    <scroll-view scroll-y style="height: 100%;">
+      <!-- 小模块 -->
+      <block wx:key="*this">
+        <!-- 小模块 -->
+        <view wx:for='{{noopsycheData}}' wx:for-item="item" wx:for-index='index' wx:key="key">
+
+          <view class='room_lump' bindlongtap='longtapRoom' id='{{index}}' bindtap="multipleTap" bindtouchstart="touchStart" bindtouchend="touchEnd" data-title='{{item.name}}' data-img='{{item.src}}' data-onOff='{{item.status[item.on_off?1:2]}}' data-btnOff="{{item.on_off ? 'room_on':'room_off'}}">
+            <!-- 图片 -->
+            <image bindtap='commBtn' data-index='{{index}}' data-img='{{item.src}}' data-onOff='{{item.status[item.on_off?1:2]}}' data-btnOff="{{item.on_off ? 'room_on':'room_off'}}" class='room_image' src='{{item.src}}'></image>
+
+            <text bindtap='commBtn' id='{{index}}' data-itemIndex='{{index}}' bindlongtap='showTitle' data-title='{{room.name}}' data-img='{{item.src}}' data-onOff='{{item.status[item.on_off?1:2]}}' data-btnOff="{{item.on_off ? 'room_on':'room_off'}}" class='room_text'>{{item.name}}</text>
+
+            <view wx:if='{{item.on_offs}}'>
+              <text class='room_status'  data-onOff='{{item.status[item.on_off?1:2]}}' data-btnOff="{{item.on_off ? 'room_on':'room_off'}}">{{item.status[item.on_off?1:2]}}</text>
+
+              <view bindtap='onoff' id='{{index}}' data-onOff='{{item.status[item.on_off?1:2]}}' data-btnOff="{{item.on_off ? 'room_on':'room_off'}}" class="{{item.on_off ? 'room_on':'room_off'}}"></view>
+            </view>
+          </view>
+        </view>
+      </block>
+    </scroll-view>
+  </swiper-item>
+
+</swiper>
+
+
+<!-- 透明遮盖层，用于退出评分层 -->
+<view bindtap="hideModal" animation="{{animationData}}" class="touming_top" wx:if="{{showModalStatus}}">
+</view>
+
+<view animation="{{animationData}}" class="container-column buydes-dialog-container shade" wx:if="{{showModalStatus}}">
+  <view class="operating{{operating ? '' :'show'}}   conts">
+    <view data-names="{{device_name}}">{{device_name}} </view>
+    <import src="item.wxml" />
+
+    <view bindtap='moveRoom'>
+      
+       移动至
+
+    </view>
+    <view> 添加至常用 </view>
+    <view bindtap='rename'> 重命名 </view>
+    <view bindtap='showDialogBtn'> 移除设备 </view>
+    <block wx:for="{{obj}}" wx:key>
+      <input value="{{item}}"></input>
+    </block>
+    <view bindtap='cancel'>取消</view>
+  </view>
+</view>
+
+<!-- 透明遮盖层，用于退出评分层 -->
+<view bindtap="hideModal" animation="{{animationData}}" class="touming" wx:if="{{showModalStatus}}">
+</view>
+
+<modal id="modal" hidden="{{hiddenmodalput}}" title="修改设备名称" confirm-text="确定" cancel-text="取消" bindcancel="cancels" bindconfirm="confirm">
+  <input class='renamei' type='text' bindinput='bindName' value="{{device_name}}" data-names="{{aname}}" />
+</modal>

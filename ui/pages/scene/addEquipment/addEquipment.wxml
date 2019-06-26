@@ -1,0 +1,31 @@
+<!--   房间  模块  --> 
+<view class="swiper-tab"> 
+  <scroll-view scroll-x="true" style=" white-space: nowrap; display: flex;width:90%"> 
+    <view wx:for='{{roomDatas}}' wx:key="" wx:for-item='rooms' wx:for-index='index' class="swiper-tab-list {{currentTab==index ? 'on' : ''}}" style='width:50px;display: inline-block"' data-current="{{index}}" bindtap="swichNav">{{rooms.name}}</view> 
+  </scroll-view> 
+ 
+</view> 
+ 
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindChange"> 
+  <swiper-item class="room" id='roomP1' wx:for='{{roomDatas}}'> 
+    <scroll-view scroll-y style="height: 100%;"> 
+      <!-- 小模块 --> 
+      <block wx:key="*this"> 
+        <!-- 小模块 --> 
+        <view wx:for='{{noopsycheData}}' wx:for-item="item" wx:for-index='index' wx:key="key"> 
+          <view class='room_lump' bindtap='commBtn' data-index='{{index}}'> 
+            <image  class='room_image' src='{{item.src}}'></image> 
+            <text   class='room_text'>{{item.name}}</text> 
+            
+            <view wx:if='{{item.on_offs}}'> 
+            <text class="roommsg">体验馆</text>
+              <!-- <text class='room_status'>{{item.status[item.on_off?1:2]}}</text>  -->
+              <!-- <view bindtap='onoff' id='{{index}}' data_onOff='' class="{{item.on_off ? 'room_on':'room_off'}}"></view>  -->
+            </view> 
+          </view> 
+        </view> 
+      </block> 
+    </scroll-view> 
+  </swiper-item> 
+ 
+</swiper>

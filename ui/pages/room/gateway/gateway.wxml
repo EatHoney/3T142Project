@@ -1,0 +1,45 @@
+<!--pages/room/gateway/gateway.wxml-->
+<!-- 上层 -->
+<view id='title' bindtap="go_details">设备信息 > </view>
+<view id='top'>
+  <view class='logImg'>
+    <view></view>
+  </view>
+
+  <view id='bottom'>
+    <view>
+      <view></view>
+      <view>外出布防</view>
+    </view>
+    <view>
+      <view></view>
+      <view>留守布防</view>
+    </view>
+    <view>
+      <view></view>
+      <view>撤防</view>
+    </view>
+    <view>
+      <view></view>
+      <view>设置</view>
+    </view>
+    <view>
+      <view></view>
+      <view>设置</view>
+    </view>
+  </view>
+
+  <view class='middle'>
+
+    <view>
+      <view>留守布防</view>
+      <view>当前模式</view>
+    </view>
+
+    <view>
+      <view>在线</view>
+      <view>设备状态</view>
+    </view>
+
+  </view>
+</view>

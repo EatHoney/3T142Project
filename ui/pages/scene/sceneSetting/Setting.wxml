@@ -1,0 +1,26 @@
+<!--pages/sceneSetting/Setting.wxml-->
+
+<view class='header'>
+  <view class='center'>
+    <image src='{{array.src}}' style='width:60px; height:60px;margin:5px auto;'></image>
+    <view style='font-size:14px;margin:5px auto;'>{{array.mode}}</view>
+    <!-- 下拉选项框 -->
+    <view class='select' bindtap='addEquipment'>
+      <image src='/img/底部导航栏/O/shezhi.png' style='width:1rem; height:1rem'></image>
+    </view>
+  </view>
+  <view class="select_box" wx:if="{{select}}">
+    <button class="select_one" bindtap="addroom" data-name="添加">添加 </button>
+    <button class="select_two" bindtap="deleteScene" data-name="删除此模式">删除此模式 </button>
+    <button class="select_three" bindtap="updateSceneName" data-mode="{{array.mode}}">重命名 </button>
+  </view>
+</view>
+<view class='list'>
+ <view wx:for='{{equipmentObj}}' > 
+          <view class='room_lump' bindlongtap='delEquipment' data-index='{{index}}'> 
+            <image src='{{item.src}}' class='room_image'  style='width:50px;height:50px;'></image> 
+            <text class='room_text' >{{item.name}}</text> 
+
+</view>
+</view>
+</view>

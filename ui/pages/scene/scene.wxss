@@ -1,0 +1,60 @@
+
+.title-scene{
+  margin: 30rpx 0 30rpx 30rpx;
+  width: 326rpx;
+  height: 200rpx;
+  border: 1rpx blue solid;
+  border-radius:25rpx;
+  text-align: center;
+  float: left;
+  /*背景半透明*/
+  background: rgba(255, 255, 255, 0.8);
+}
+/* 进入情景设置页面 */
+.title-scene-button1{
+  margin: 10rpx;
+  width: 50rpx;
+  height: 50rpx;
+  float: right;
+}
+
+.title-scene-button2{
+  width: 160rpx;
+  height: 200rpx;
+  text-align: center;
+  margin-top: 20rpx;
+  margin-left: 80rpx;
+}
+
+.stepper-right{
+  margin-top: 9rpx;
+  float: right;
+}
+
+.scene-sort{
+  width: 100%;
+  height: 60rpx;
+  background-color: white;
+}
+
+.scene-sort-text1{
+  font-size: 35rpx;
+  margin-left:20rpx; 
+  margin-top: 5rpx; 
+  float: left;
+}
+
+.scene-sort-text2{
+  /* 字体加粗 */
+  font-weight: bold;
+  font-size: 35rpx;
+  margin-left:260rpx; 
+}
+
+.scene-sort-text3{
+  font-size: 35rpx;
+  color: rgb(0, 132, 255);
+  margin-right:20rpx; 
+  margin-top: 5rpx; 
+  float: right;
+}

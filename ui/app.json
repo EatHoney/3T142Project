@@ -1,0 +1,74 @@
+{
+  "pages": [
+    "pages/room/room",
+    "pages/room/Curtain/Curtain",
+    "pages/room/gateway/gateway",
+    "pages/room/gateway/details/details",
+    "pages/room/gateway/details/replace/replace",
+    "pages/room/roomSocket/roomSocket",
+    "pages/room/InfraredAlarm/InfraredAlarm",
+    "pages/room/GasAlarm/GasAlarm",
+    "pages/room/water_out/water_out",
+    "communal/light/index1/setTimes/setTimes",
+    "pages/room/calorifier/calorifier",
+    "pages/room/calorifier/voltameter/voltameter",
+    "pages/room/calorifier/voltameter/voltameter_U/voltameter_U",
+    "pages/room/calorifier/seting_up/seting_up",
+    "pages/common/common",
+    "pages/voice/voice",
+    "pages/scene/scene",
+    "pages/scene/addscene/addscene",
+    "pages/setup/setup",
+    "pages/setup/allocation/allocation",
+    "pages/setup/information/information",
+    "pages/setup/authentication/authentication",
+    "pages/setup/backups/backups",
+    "pages/setup/problem/problem",
+    "pages/setup/about/about",
+    "pages/equipment/equipment",
+    "pages/scene/sceneSetting/Setting"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#f5f6fa",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "list": [
+      {
+        "selectedIconPath": "img/底部导航栏/-/ziyuan1.png",
+        "iconPath": "img/底部导航栏/O/ziyuan1.png",
+        "pagePath": "pages/common/common",
+        "text": "常用"
+      },
+      {
+        "selectedIconPath": "img/底部导航栏/-/fangjian1.png",
+        "iconPath": "img/底部导航栏/O/fangjian1.png",
+        "pagePath": "pages/room/room",
+        "text": "房间"
+      },
+      {
+        "selectedIconPath": "img/语音/shurufayuyin (1).png",
+        "iconPath": "img/语音/shurufayuyin (1).png",
+        "pagePath": "pages/voice/voice",
+        "text": "语音"
+      },
+      {
+        "selectedIconPath": "img/底部导航栏/-/xinaixin_fuzhi.png",
+        "iconPath": "img/底部导航栏/O/xinaixin_fuzhi.png",
+        "pagePath": "pages/scene/scene",
+        "text": "情景"
+      },
+      {
+        "selectedIconPath": "img/底部导航栏/-/shezhi.png",
+        "iconPath": "img/底部导航栏/O/shezhi.png",
+        "pagePath": "pages/setup/setup",
+        "text": "设置"
+      }
+    ]
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

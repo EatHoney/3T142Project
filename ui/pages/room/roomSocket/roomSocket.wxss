@@ -1,0 +1,102 @@
+page {
+  background: #f5f6fa;
+}
+
+.headcolor {
+  border-radius: 10rpx 10rpx 10rpx 10rpx;
+  margin: 0 20rpx 0 20rpx;
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 410rpx;
+  color: #abbaca;
+  font-size: 30rpx;
+}
+
+.footcolor {
+  margin: 20rpx 20rpx 0 20rpx;
+  border-radius: 10rpx 10rpx 10rpx 10rpx;
+  background-color: white;
+  height: 105rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.footcolor-font {
+  padding: 30rpx 0 0 30rpx;
+  color: #abbaca;
+  font-size: 30rpx;
+}
+
+.footcolor-font2 {
+  padding-top: 25rpx;
+  color: #3dc5ee;
+  font-size: 40rpx;
+}
+
+.btn-hleft {
+  padding: 0 5rpx 0 0;
+  margin: 28rpx 0 0 0;
+  width: 50rpx;
+  height: 50rpx;
+  background-size: 50rpx;
+  background-color: #fff;
+  background-image: url('https://upload-images.jianshu.io/upload_images/15733580-6ad2b8526b69b12a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240');
+}
+
+.btn-hright {
+  margin: 28rpx 0 0 0;
+  width: 50rpx;
+  height: 50rpx;
+  background-size: 50rpx;
+  background-color: #fff;
+  background-image: url('https://upload-images.jianshu.io/upload_images/15733580-c9933807acff9a97.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240');
+}
+
+
+
+.gap {
+  padding: 16rpx 0 0 0;
+  width: 520rpx;
+}
+
+button::after {
+  border: none;
+  border-radius: 0;
+}
+
+.headbtn {
+  width: 370rpx;
+  background-color: transparent;
+  height: 370rpx;
+  background-size: 370rpx;
+  background-image: url('https://upload-images.jianshu.io/upload_images/15733580-31f12da310ff633c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240');
+}
+
+.iconusecont-div1 {
+  margin: 80rpx 0 0 10rpx;
+  display: inline-block;
+  width: 32%;
+  text-align: center;
+}
+
+.flex-item1 {
+  display: inline-block;
+  width: 76rpx;
+  height: 76rpx;
+  border: 6rpx solid #dedddc;
+  text-align: center;
+  border-radius: 100rpx;
+  cursor: pointer;
+  line-height: 30rpx;
+  background-color: #aebecc;
+}
+
+.flex-item1-font {
+  font-size: 26rpx;
+  color: #b6b6b7;
+}

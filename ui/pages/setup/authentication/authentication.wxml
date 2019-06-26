@@ -1,0 +1,33 @@
+<form bindsubmit="ChangeInfo">
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">用户名</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input" name="userName" />
+    </view>
+  </view>
+</view>
+
+<view class='.authentication-graySpace'></view>
+
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_vcode" style='padding:5px 5px 5px 10px'>
+    <view class='weui-cell__bd'>
+      <input class="weui-input" type='number' placeholder='请输入验证码'></input>
+    </view>
+    <view class='weui-cell__ft'>
+      <button class='btnStyle'>
+      获取验证码
+      </button>
+    </view>
+  </view>
+</view>
+<view class='.authentication-graySpace2'></view>
+
+<button class='btnStyle2'>
+  验证
+</button>
+
+</form>

@@ -1,0 +1,30 @@
+<!--pages/room/calorifier/voltameter/voltameter.wxml-->
+<view class='top'>
+  <view>
+    <view>总花费约（元）</view>
+    <view>0</view>
+  </view>
+  <view>
+    <view bindtap='reset'>数据清零</view>
+    <view bindtap='voltameter_U'>电量单价</view>
+  </view>
+</view>
+
+<view class='bottom'>
+  <view>
+    <view>0.00</view>
+    <view>功率/kw</view>
+  </view>
+  <view>
+    <view>0.03</view>
+    <view>电流/A</view>
+  </view>
+  <view>
+    <view>225.30</view>
+    <view>电压/V</view>
+  </view>
+  <view>
+    <view>0.00</view>
+    <view>电量/kw·h</view>
+  </view>
+</view>

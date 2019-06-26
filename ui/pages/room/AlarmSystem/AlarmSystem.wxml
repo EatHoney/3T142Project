@@ -1,0 +1,15 @@
+<view class='bgc,body-view'>
+  报警提醒推送至微信
+  <switch checked bindchange="switch1Change" />
+</view>
+<view class='Comment'>
+  <view>
+    注:
+  </view>
+  <view>
+    1.此功需要先关注官方微信公众号,并在公众号进行账号绑定后才能使用。
+  </view>
+  <view>
+    2.请进入"系统设置-关于我们"选项查看微信公众号。
+  </view>
+</view>

@@ -1,0 +1,4 @@
+<view class='bgc' bindtap='sceneMode'>
+  <text>检测到有害气体</text>
+</view>
+<view class='icon'></view>

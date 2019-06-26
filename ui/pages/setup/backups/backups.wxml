@@ -1,0 +1,15 @@
+<view class='main'>
+
+  <view class='img'>
+    <image src='../../../img/房间与常用/chazuo.png'></image>
+  </view>
+
+  <view class='hint'>无备份记录,立即备份</view>
+
+  <button class='btnStyle2'>立即备份</button>
+  <!-- <button class='btnStyle1'>帮助</button> -->
+</view>
+
+<view>
+  <view class='detail'>无备份记录,点击上方立即备份</view>
+</view>       

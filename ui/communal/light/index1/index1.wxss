@@ -1,0 +1,57 @@
+/* communal/gas/index1/index1.wxss */
+
+.head .title {
+  position: absolute;
+  left: 38rpx;
+  font-size: 36rpx;
+  font-weight: bold;
+  color: rgb(121, 69, 69);
+}
+
+.head .device {
+  position: absolute;
+  right: 36rpx;
+  top: 20rpx;
+  font-size: 32rpx;
+}
+
+.intermediate image {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  margin: 20rpx;
+  top: 25%;
+  left: 17.5%;
+}
+
+.bottoms {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 27rpx;
+  display: flex;
+}
+
+.bottoms view {
+  flex: 1;
+  width: 25%;
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+
+.bottoms view image {
+  width: 68rpx;
+  height: 60rpx;
+  position: absolute;
+  bottom: 70rpx;
+  margin-bottom: 18rpx;
+}
+
+.bottoms view:first-child text {
+  margin-left: -9rpx;
+}
+
+.bottoms view:last-child text {
+  position: absolute;
+  right: 123rpx;
+}

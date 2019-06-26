@@ -1,0 +1,120 @@
+/* pages/room/addRoom/addRoom.wxss */
+
+.room-img image{
+  width: 50rpx;
+  height: 50rpx;
+  float: left;
+  padding: 10rpx;
+}
+.room-img text{
+    font-size: 34rpx;
+    color: #9fd6f2;
+    line-height: 35rpx;
+    height: 35rpx;
+    text-align: center;
+}
+
+.room-img{
+
+  padding: 25rpx;
+  background: white;
+}
+.room-conation{
+  background: #f4f8fb;
+  height: 100%;
+}
+.room-list:nth-of-type(2){
+ margin-top: 20rpx;
+}
+.room-list{
+  background: white;
+
+  border-top: #555;
+}
+.room-shibei{
+  float: right;
+  margin-top:-30rpx;
+
+}
+.room-name{
+  float: left;
+  margin-top:-30rpx;
+}
+
+/* 
+    搜索输入框 
+ */
+
+ .room-one {
+width:35%;
+float:left;
+background:#07c160;
+
+
+}
+.room-body{
+  border: 1px solid#07c160;
+  height:90rpx;
+
+}
+.room-contaion {
+  height: 100rpx;
+}
+
+.section__title {
+  float: left;
+  width: 60%;
+  padding:2.3%;
+
+}
+
+.room-Name-Mo{
+   padding: 60rpx;
+}
+
+.operating {
+  text-align: center;
+  position: absolute;
+  bottom: 0rpx;
+  background-color: #000;
+  width: 100%;
+}
+
+.operating view {
+  border-bottom: 0.5rpx solid #ccc;
+  padding: 20rpx 0;
+  font-size: 26rpx;
+  background-color: #fff;
+}
+
+.operating view:first-child {
+  background-color: #ccc;
+  font-size: 29rpx;
+  color: blue;
+}
+
+.operating view:last-child {
+  /* border-top: 0.5rpx solid #ccc; */
+  margin-top: 10rpx;
+  margin-bottom: 0rpx;
+}
+
+.show {
+  display: block !important;
+}
+
+.hidden {
+  display: none !important;
+}
+
+.renamei {
+  text-align: center;
+  border: 0.2px solid #000;
+  width: 66%;
+  margin: 0 auto;
+  padding: 5rpx;
+  color: rgba(0, 0, 255, 0.288);
+}
+.operating show{
+  position: absolute top 50px;
+}

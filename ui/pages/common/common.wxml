@@ -1,0 +1,50 @@
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindChange" bindlongtap='deleteitem'>
+  <swiper-item class="room" id='roomP1'>
+    <scroll-view scroll-y style="height: 100%;">
+      <!-- 小模块 -->
+      <view>
+        <!-- 客厅插座 (小模块) -->
+        <view wx:for='{{noopsycheData}}' wx:key="" wx:for-item="item" wx:for-index='indx'>
+          <view class='room_lump' id='{{indx}}' data-itemIndex='{{index}}' bindtap="multipleTap" bindlongtap="longTap" bindtouchstart="touchStart" bindtouchend="touchEnd" data-title='{{item.name}}'>
+            <image class='room_image' src='{{item.src}}'></image>
+            <view wx:if='{{indx}} == 2'>
+              <text class='room_text'>{{item.name}}</text>
+            </view>
+
+            <text class="roommsg">体验馆</text>
+            <text class='room_status'>{{item.status[indx+1]}}</text>
+            <image class='room_onoff' src="/img/房间与常用/tianchongxing-.png "></image>
+          </view>
+        </view>
+
+      </view>
+
+    </scroll-view>
+  </swiper-item>
+</swiper>
+<!-- 透明遮盖层，用于退出评分层 -->
+<view bindtap="hideModal" animation="{{animationData}}" class="touming_top" wx:if="{{showModalStatus}}">
+</view>
+
+<view animation="{{animationData}}" class="container-column buydes-dialog-container" wx:if="{{showModalStatus}}">
+  <view class='operating {{operating}}'>
+    <view data-names="{{device_name}}">{{device_name}} </view>
+    <view bindtap='rename'> 重命名 </view>
+    <view bindtap='showDialogBtn'> 移除设备 </view>
+    <block wx:for="{{obj}}" wx:key>
+      <input value="{{item}}">
+      </input>
+    </block>
+    <view bindtap='cancel'>取消</view>
+  </view>
+</view>
+
+
+<!-- 透明遮盖层，用于退出评分层 -->
+<view bindtap="hideModal" animation="{{animationData}}" class="touming" wx:if="{{showModalStatus}}">
+</view>
+
+
+<modal id="modal" hidden="{{hiddenmodalput}}" title="修改设备名称" confirm-text="确定" cancel-text="取消" bindcancel="cancels" bindconfirm="confirm">
+  <input class='renamei' type='text' bindinput='bindName' value="{{device_name}}" data-names="{{aname}}" />
+</modal>

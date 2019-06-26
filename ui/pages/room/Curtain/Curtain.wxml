@@ -1,0 +1,26 @@
+<view class='headcolor'>
+  <view style='padding:20rpx 20rpx 20rpx 30rpx'>
+    操作窗帘
+  </view>
+  <view class="iconusecont-div {{state==index?'active-tag':''}}" bindtap="select_use" wx:for="{{use}}" data-key='{{index}}'>
+    <view class="flex-item">
+      <rich-text class='use_name'>{{item.use_name}}</rich-text>
+    </view>
+  </view>
+</view>
+<view class='footcolor'>
+  <view class='footcolor-font'>
+    窗帘长度
+  </view>
+  <view class="page-section gap">
+    <view class="page-section-demo">
+      <slider value="33" onChange="slider4change" min="0" max="100" backgroundColor="#d6d6d6" activeColor="#00aaee" trackSize="2" handleSize="6" handleColor="399fe5" show-value />
+    </view>
+  </view>
+</view>
+<view>
+  <view class='iconusecont-div1' wx:for="{{use1}}" data-key='{{index}}'>
+    <view class="flex-item1"></view>
+    <rich-text class='flex-item1-font'>{{item.use_name}}</rich-text>
+  </view>
+</view>

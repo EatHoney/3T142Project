@@ -1,0 +1,22 @@
+page{
+  background: #f5f6fa;
+}
+.information-title{
+  background: #fff;
+}
+.information-graySpace{
+  font-size: 12px;
+  min-height: 10rpx;
+  background: #f5f6fa;
+}
+button::after {
+  border: none;
+}
+.btnStyle2{
+  color: #fff;
+  width: 280rpx;
+  font-size: 32rpx;
+  margin-top: 80rpx; 
+  border-radius: 30px 30px 30px 30px;
+  background: linear-gradient(to right, #39a1e7 , #50cbe3);
+}

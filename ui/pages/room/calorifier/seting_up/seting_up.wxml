@@ -1,0 +1,11 @@
+<!--pages/room/calorifier/seting_up/seting_up.wxml-->
+<view class='top'>
+  <view>
+    <view>温度上限</view>
+    <view>80 ></view>
+  </view>
+  <view bindtap='hint'>
+    <view>恢复出厂设置</view>
+    <view>></view>
+  </view>
+</view>

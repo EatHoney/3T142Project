@@ -1,0 +1,24 @@
+<!--pages/room/gateway/details/replace/replace.wxml-->
+<view class='top'>
+  <view>当前房间</view>
+    
+  <view >{{roomDatas[0].name}}</view>
+</view>
+
+<view>
+  将设备移动到
+</view>
+
+<scroll-view scroll-y="true" style='height:100%;'>
+  <view wx:for="{{roomDatas}}" wx:key="" wx:for-item="items" wx:for-index='index' class='tab'>
+    <view class='site' data-mNums='{{index}}'>
+      <view>{{items.name}}</view>
+      <view bindtap="option" id='{{index}}' class="{{items.flag ? 'weui-icon-success':'weui-icon-circle'}}">
+      </view>
+    </view>
+  </view>
+</scroll-view>
+
+<view style="position:fixed;bottom:0;width:100%;">
+    <button bindtap='confirmBase' type='primary'>确定</button>
+</view>

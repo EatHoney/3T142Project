@@ -1,0 +1,21 @@
+.scene_title{
+  display: flex;
+}
+.scene_title text{
+
+margin:0 auto;
+
+}
+
+.btn {
+  height: 80px;
+  width: 80px;
+  float: left;
+  margin: 20px;
+}
+
+.sceneItem {
+  height: 50px;
+  width: 50px;
+  margin-top: 17px;
+}

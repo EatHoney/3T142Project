@@ -1,0 +1,43 @@
+<!--pages/scene/scene.wxml-->
+<view bindtap='onPullDownRefresh' wx:if="{{topShow1}}">
+<view class='stepper'>
+  <text bindtap='addScene'>+</text>
+    <image class='stepper-right' bindtap='sceneSort' src='/img/底部导航栏/O/shezhi.png' style='width:45rpx;height:45rpx; margin-right:20rpx;'></image>
+</view>
+</view>
+
+<!-- 情景模式排序 -->
+<view class='scene-sort' wx:if="{{topShow2}}">
+ <text class='scene-sort-text1' bindtap='sceneSortCancel'>取消</text>
+ <text class='scene-sort-text2'>排序</text>
+ <text class='scene-sort-text3' bindtap='sceneSortSave'>保存</text>
+</view>
+
+<view wx:for="{{array}}" wx:key="id" style='display:block;'>
+  <view class='title-scene' bindlongtap='longtapSort'>
+   <view class='title-scene-button1'  data-name='{{item.mode}}'>
+      <image src='/img/底部导航栏/O/shezhi.png ' style='width:45rpx;height:45rpx;' bindtap='gotopage' data-index='{{index}}'></image>
+    </view>
+    <view class='title-scene-button2'>
+      <view class='title-scene-img'>
+        <image src='{{item.src}}' style='width:100rpx;height:100rpx;'></image>
+      </view>
+      <text style='font-size:35rpx;font-weight: bold;'>{{item.mode}}</text>
+    </view>
+  </view>
+</view>
+
+<!--情景页面-->
+<!-- <view wx:for="{{array}}" wx:key="id" style='display:block;'>
+  <view class='title-scene'bindlongpress='longPress'>
+    <view class='title-scene-button1' bindtap='gotopage' data-name='{{item.mode}}'>
+      <image src='/img/底部导航栏/O/shezhi.png ' style='width:45rpx;height:45rpx;'></image>
+    </view>
+    <view class='title-scene-button2'>
+      <view class='title-scene-img'>
+        <image src='{{item.src}}' style='width:100rpx;height:100rpx;'></image>
+      </view>
+      <text style='font-size:35rpx;font-weight: bold;'>{{item.mode}}</text>
+    </view>
+  </view>
+</view> -->

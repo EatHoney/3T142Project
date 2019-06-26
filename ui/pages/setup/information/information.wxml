@@ -1,0 +1,28 @@
+<form bindsubmit="ChangeInfo">
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">用户名</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input" name="userName" />
+    </view>
+  </view>
+</view>
+
+<view class='information-graySpace'></view>
+
+<view class="weui-cells weui-cells_after-title">
+  <view class="weui-cell weui-cell_input">
+    <view class="weui-cell__hd">
+      <view class="weui-label">邮箱地址</view>
+    </view>
+    <view class="weui-cell__bd">
+      <input class="weui-input" name="userName" />
+    </view>
+  </view>
+</view>
+
+  <button class='btnStyle2'>确定</button>
+
+</form>

@@ -1,0 +1,13 @@
+<!--pages/addscene/addscene.wxml-->
+<view class='scene'>
+  <view class='scene_title'>
+    <text>请选择情景模式图标</text>
+  </view>
+  <view wx:for="{{array}}" class='sceneLine'>
+    <button class='btn' bindtap='addScene' data-index='{{index}}'>
+      <image src='{{item.src}}' class='sceneItem' name='mode'>{{item.mode}}</image>
+    </button>
+  </view>
+</view>
+<modal title="标题" confirm-text="确认" cancel-text="取消" hidden="onOff" bindconfirm="modalConfirm" bindcancel="modalCancel">
+</modal>

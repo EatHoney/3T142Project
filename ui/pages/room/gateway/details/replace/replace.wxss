@@ -1,0 +1,24 @@
+/* pages/room/gateway/details/replace/replace.wxss */
+
+page {
+  background-color: #f5f6fa;
+}
+
+.weui-icon-success {
+  color: #39a0eb;
+}
+
+.top {
+  background-color: #fff;
+}
+
+.tab {
+  background-color: #fff;
+}
+
+.site {
+  display: flex;
+  justify-content:space-between;
+  width: 100%;
+}
+

@@ -1,0 +1,15 @@
+<scroll-view scroll-y="true">
+  <view class="setcolor" wx:key="" wx:for="{{list}}" wx:for-item="item">
+    <view class="item-avatar-xs" wx:key="" wx:for="{{item.list_tool}}" wx:for-item="i" data-log="{{i.name}}" data-url="{{i.url}}" bindtap="goPage">
+      <image src="{{i.img}}" />
+      <view class='setcolor' style="padding-left:10px">
+        <text class="title">{{i.name}}</text>
+        <span class="arrow_wrap"></span>
+      </view>
+    </view>
+    <view class="graySpace"></view>
+  </view>
+  <view>
+    <button>退出账号</button>
+  </view>
+</scroll-view>

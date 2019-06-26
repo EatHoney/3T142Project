@@ -1,0 +1,16 @@
+<!--communal/light/index3/index3.wxml-->
+<view class='head'>
+  <text class='cancel'>取消</text>
+  <text>移动设备</text>
+  <text class='confirm'>确定</text>
+</view>
+<view class='title'>
+  <text>当前房间</text>
+  <text>{{address}}</text>
+</view>
+<view class='middle'>
+<text>将设备移动到</text>
+</view>
+<view class='case'>
+
+</view>

@@ -1,0 +1,54 @@
+/* pages/room/gateway/details/details.wxss */
+
+page {
+  background-color: #f5f6fa;
+}
+
+#detop {
+  width: 100%;
+  height: 140rpx;
+  background-color: #fff;
+  margin-bottom: 20rpx;
+}
+
+#detop>view:nth-child(1) {
+  float: left;
+  width:50%;
+  height:120rpx;
+}
+#detop>view:nth-child(1)>view{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #3fcaa9;
+  border-radius: 50%;
+  margin: 20rpx;
+}
+
+#detop>view:nth-child(2) {
+  width:50%;
+  float: left;
+  text-align: right;
+}
+
+#detop>view:nth-child(3) {
+  width:50%;
+  float: left;
+  text-align: right;
+}
+
+#debottom {
+  background-color: #fff;
+  width: 100%;
+  height: 105rpx;
+  border-top: 2rpx #ededee solid;
+}
+
+#debottom>view {
+  float: left;
+  width: 50%;
+  padding: 20rpx 0 20rpx 0;
+}
+
+#debottom>view:last-of-type {
+  text-align: right;
+}

@@ -1,0 +1,23 @@
+<view class='head'>
+
+  <input class='title' type='text' placeholder='{{title}}'></input>
+
+  <text class='device' bindtap="device_info">设备信息</text>
+
+</view>
+
+<view class='intermediate'>
+  <image class='room_image' src='../../../img/房间与常用/{{imageName}}' bindtap='changeImage'></image>
+</view>
+
+<view class='bottoms'>
+  <view>
+    <image class='room_image' src='../../../img/房间与常用/ny3.png'></image>
+    <text>遥控匹配</text>
+  </view>
+
+  <view>
+    <image bindtap='go_setTimes' class='room_image' src='../../../img/房间与常用/ny3.png'></image>
+    <text>定时</text>
+  </view>
+</view>

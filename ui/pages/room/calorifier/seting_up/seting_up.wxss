@@ -1,0 +1,21 @@
+/* pages/room/calorifier/seting_up/seting_up.wxss */
+page{
+  background-color: rgb(245, 246, 250)
+}
+
+.top {
+  background-color: #fff;
+}
+
+.top>view {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.top>view>view {
+  width: 50%;
+}
+.top>view>view:last-of-type{
+  border-top: 1prx rgb(185, 226, 241) solid;
+  text-align: right;
+}

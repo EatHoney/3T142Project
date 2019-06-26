@@ -1,0 +1,9 @@
+{
+  "usingComponents": {},
+  "enablePullDownRefresh": true,
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#f2f2f2",
+  "navigationBarTitleText": "情景模式",
+  "navigationBarTextStyle": "black"
+  
+}

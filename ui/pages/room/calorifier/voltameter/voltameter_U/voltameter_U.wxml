@@ -1,0 +1,3 @@
+<!--pages/room/calorifier/voltameter/voltameter_U/voltameter_U.wxml-->
+<input value='0' typt='text'/>
+<button>保存</button>

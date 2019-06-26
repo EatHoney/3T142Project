@@ -1,0 +1,70 @@
+/* pages/room/calorifier/voltameter/voltameter.wxss */
+
+page {
+  background-color: rgb(245, 246, 250);
+}
+
+.top {
+  background-color: #fff;
+  padding: 180rpx 0 20rpx 0;
+}
+
+.top>view:first-of-type {
+  text-align: center;
+  width: 265rpx;
+  margin: 0 auto;
+}
+
+.top>view:first-of-type>view:first-of-type {
+  font-size: 35rpx;
+}
+
+.top>view:first-of-type>view:last-of-type {
+  font-weight: bold;
+  font-size: 145rpx;
+  color: rgb(56, 160, 231);
+}
+
+.top>view:last-of-type {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+  margin: 0 auto;
+}
+
+.top>view:last-of-type>view {
+  text-align: center;
+  width: 200rpx;
+  height: 65rpx;
+  border-radius: 35rpx;
+  line-height: 60rpx;
+  margin-top: 90rpx;
+}
+
+.top>view:last-of-type>view:first-of-type {
+  color: rgb(87, 87, 87);
+  border: 1rpx rgb(205, 205, 205) solid;
+}
+
+.top>view:last-of-type>view:last-of-type {
+  color: #fff;
+  background-color: rgb(57, 161, 232);
+}
+
+.bottom {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bottom>view {
+  width: 50%;
+  text-align: center;
+  margin-top: 155rpx;
+}
+.bottom>view>view:first-of-type{
+  font-size: 40rpx;
+}
+.bottom>view>view:last-of-type{
+  font-size: 25rpx;
+  color: rgb(139, 140, 141)
+}

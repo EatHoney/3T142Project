@@ -1,0 +1,60 @@
+/* pages/sceneSetting/Setting.wxss */
+
+
+.select_one,.select_two,.select_three{
+  font-size: 30rpx;
+  width: 220rpx;
+  height: 60rpx;
+}
+.select{
+  position: absolute;
+  right: 0px;
+  top:0px;
+}
+.select_box{
+   position: absolute;
+  right: 20px;
+}
+.header{
+  display: flex;
+  background: orange;
+  height: 120px;
+}
+.center{
+ margin: 10px auto;
+
+}
+/* 整体模块样式 */
+
+.room_lump {
+  color: #706c5f;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 25rpx 0rpx 10rpx 20rpx;
+  width: 340rpx;
+  height: 148rpx;
+  float: left;
+  border-radius: 20rpx;
+  background-color: #f7f6f1;
+}
+
+/* 设置小模块图片样式 */
+
+.room_image {
+  width: 95rpx;
+  height: 95rpx;
+  margin: 15rpx 0 15rpx 15rpx;
+  float: left;
+  padding-top: 16rpx;
+}
+
+.room_text {
+  font-size: 27rpx;
+  width: 62%;
+  height: 39rpx;
+  float: left;
+  text-align: left;
+  font-weight: bolder;
+  line-height: 1.5;
+  margin-top: 15rpx;
+  margin-left: 10rpx;
+}

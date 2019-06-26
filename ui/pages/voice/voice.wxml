@@ -1,0 +1,43 @@
+<view class="bgck">
+  <view>
+    <text class="size1">你可以这么说 :</text>
+  </view>
+  <view class="size2">
+    <text>客厅灯打开</text>
+    <text>打开卧室插座</text>
+    <text>回家模式</text>
+    <text>客厅灯调为蓝色</text>
+    <text>打开客厅空调</text>
+  </view>
+
+  <view class="group">
+    <block>
+      <icon type="cancel" class="group1" size="22" color="white" bindtap='backHome' />
+    </block>
+  </view>
+
+  <view class="myRecode">
+    <view class="recode" bindtouchstart='recodeClick' bindtouchend='recodeEnd'>
+
+      <image class="ripple {{animationStatus?'rippleAnimation1':''}}" src="/img/语音/shurufayuyin.png"></image>
+      <image class="ripple {{animationStatus?'rippleAnimation1':''}}" src="/img/语音/shurufayuyin.png"></image>
+      <image class="ripple {{animationStatus?'rippleAnimation1':''}}" src="/img/语音/shurufayuyin.png"></image>
+    </view>
+  </view>
+  <image src="/img/语音/wenhao.png " class="group2" bindtap='modalTap2'></image>
+  <modal class="modal" hidden="{{modalHidden2}}" no-cancel bindconfirm="modalChange2">
+    <view> 提示 </view>
+    <view>1.欢迎使用语音控制,首次进入功能,系统提示是否允许App访问手机麦克风,请选择允许使用麦克风.</view>
+    <view>2.操作说明:请按住主界面上的麦克风按钮进行语音控制,完成语音输入后,松开麦克风按钮.您给出的语音指令会显示在屏幕的右方,执行结果会显示在屏幕的左方.</view>
+    <view>3.语音控制指令说明:</view>
+    <view>①控制设备:目前控制设备的语音指令语法:设备名称+控制命令关键字!例如:客厅灯打开.客厅灯调为蓝色, 打开卧室插座.插座类,开关类,灯控盒类,热水器类:开,关；</view>
+    <view>② 控制情景模式:目前控制情景模式的语音指令语法:情景模式名称</view>
+    <view>例如:回家模式.离家模式.</view>
+    <view>通过直接说出情景模式名称,即可完成控制!</view>
+  </modal>
+  <!-- <view class="group">
+    <block>
+      <icon type="cancel" size="20" color="white" class='ruleHide' bindtap='hideRule' />
+    </block>
+  </view> -->
+</view>

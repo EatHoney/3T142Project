@@ -1,0 +1,45 @@
+/**app.wxss**/
+@import 'weui.wxss';
+page{
+  height: 100%
+}
+
+.graySpace{
+  padding-left: 40rpx;
+  background: #f5f6fa;
+  font-size: 12px;
+  min-height: 30rpx;
+}
+
+.item-avatar{
+  display: flex;
+  flex-direction: column
+}
+
+.title{
+  font-family: "微软雅黑";
+  font-size: 32rpx;
+}
+
+.item-avatar-lg,.item-avatar-md,.item-avatar-sm,.item-avatar-xs{
+  display: flex;
+  padding: 20rpx 30rpx;
+  border-bottom: 1rpx solid #eee;
+  cursor: pointer;
+  position:relative;
+}
+
+.item-avatar-xs image{
+  float: left;
+  width: 45rpx;
+  height: 45rpx;
+  box-sizing: border-box;
+}
+
+.setcolor{
+    background: #fff;
+}
+
+.item-avatar-lg .item-text,.item-avatar-md .item-text,.item-avatar-sm .item-text,.item-avatar-xs .item-text{
+  padding-left: 10px;
+}

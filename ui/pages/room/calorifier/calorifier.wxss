@@ -1,0 +1,109 @@
+/* pages/room/calorifier/calorifier.wxss */
+
+#title {
+  width: 100%;
+  color: #fff;
+  background-color: #d5d5da;
+  font-size: 30rpx;
+  padding: 10rpx;
+}
+
+.bottom {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 30rpx;
+}
+
+.bottom>view {
+  font-size: 25rpx;
+  margin: 0 40rpx;
+  text-align: center;
+}
+
+.bottom>view>view:first-of-type {
+  border-radius: 50%;
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #add8e6;
+}
+
+.matter {
+  margin-top: 30rpx;
+  width: 100%;
+  height: 100rpx;
+  font-size: 25rpx;
+  color: #838383;
+}
+
+.matter>view>view {
+  width: 155rpx;
+  margin: 45rpx;
+}
+
+.masterView {
+  width: 100%;
+  height: 100rpx;
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.masterView2 {
+  display: none;
+}
+
+.matter view {
+  text-align: center;
+}
+
+.matter>view>view>view:first-of-type {
+  border-radius: 50%;
+  height: 155rpx;
+  background-color: #add8e6;
+}
+
+.top_opion {
+  display: flex;
+  justify-content: space-between;
+}
+
+.top_opion2 {
+  display: none;
+}
+
+.wx-switch-input {
+  width: 42px !important;
+  height: 22px !important;
+}
+
+.wx-switch-input::before {
+  width: 41px !important;
+  height: 22px !important;
+}
+
+.wx-switch-input::after {
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.notbe_button {
+  margin: 0 auto;
+  width: 100%;
+  height: 650rpx;
+  border: 1rpx #00b26a solid;
+}
+
+.notbe_button>view {
+  margin: 0 auto;
+  width: 355rpx;
+  height: 355rpx;
+  border: 1rpx #0071b2 solid;
+  margin-top: 135rpx;
+  background-color: #0071b28f;
+}
+
+.notbe_button2 {
+  display: none;
+}

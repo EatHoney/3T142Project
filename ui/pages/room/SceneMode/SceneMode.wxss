@@ -1,0 +1,42 @@
+page{
+  background: #f5f6fa;
+}
+
+.bgc{
+  font-size: 32rpx;
+  background-color: #fff;
+  height: 130rpx;
+  display: flex;
+  align-items: center;
+}
+
+.graySpace1{
+  padding-left: 40rpx;
+  background: #f5f6fa;
+  min-height: 6rpx;
+}
+
+.add_btn{
+    width: 100%;
+    position: fixed;
+    margin: 0;
+    bottom: 0;
+}
+.btn{
+    width: 100%;
+    margin: 0;
+    background: #fff;
+    color: #14a1fd;
+}
+
+button::after{
+border: none;
+}
+
+.item-avatar-xs image{
+  margin: 20rpx 0 0 4rpx;
+  float: left;
+  width: 100rpx;
+  height: 100rpx;
+  box-sizing: border-box;
+}

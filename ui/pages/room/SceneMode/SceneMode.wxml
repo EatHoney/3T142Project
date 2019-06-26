@@ -1,0 +1,16 @@
+<scroll-view style='height:1120rpx' scroll-y="true">
+  <view class="setcolor" wx:for="{{list}}" wx:for-item="item">
+    <view class="item-avatar-xs" wx:for="{{item.list_tool}}" wx:for-item="i" data-log="{{i.name}}">
+      <image src="{{i.img}}"/>
+      <view class='bgc' style="padding-left:10px">
+        <text class="title">{{i.name}}</text>
+      </view>
+    </view>
+    <view class="graySpace1"></view>
+  </view>
+</scroll-view>
+<view class='add_btn'>
+  <button class='btn'>
+    确定
+  </button>
+</view>

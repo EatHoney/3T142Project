@@ -1,0 +1,166 @@
+/**index.wxss**/
+
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}
+
+.navigator-hover {
+  color: blue;
+}
+
+.other-navigator-hover {
+  color: red;
+}
+
+.swiper-tab {
+  width: 100%;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.swiper-tab-list {
+  font-size: 30rpx;
+  display: inline-block;
+  border-bottom: 2rpx solid #777;
+
+  width: 33.33%;
+  color: #777;
+}
+
+.on {
+  color: #da7c0c;
+  border-bottom: 5rpx solid #da7c0c;
+}
+
+.room_nav {
+  height: 100rpx;
+}
+
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-box view {
+  text-align: center;
+}
+
+.tab-item {
+  display: inline-block;
+  margin-left: 4px;
+  margin-right: 4px;
+  font-size: 15px;
+  text-align: center;
+  width: 22%;
+}
+
+.fix-news {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99999;
+}
+
+/* 单个模块 */
+
+#drawing {
+}
+
+#gate {
+}
+
+/* 整体模块样式 */
+
+.room_lump {
+  color: #706c5f;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 25rpx 0rpx 10rpx 20rpx;
+  width: 340rpx;
+  height: 148rpx;
+  float: left;
+  border-radius: 20rpx;
+  background-color: #f7f6f1;
+  
+}
+
+/* 设置小模块图片样式 */
+
+.room_image {
+  width: 95rpx;
+  height: 95rpx;
+  margin: 15rpx 0 15rpx 15rpx;
+  float: left;
+  padding-top: 16rpx;
+}
+
+.room_text {
+  font-size: 27rpx;
+  width: 62%;
+  height: 39rpx;
+  float: left;
+  text-align: left;
+  font-weight: bolder;
+  line-height: 1.5;
+  margin-top: 15rpx;
+  margin-left: 10rpx;
+}
+
+.room_status {
+  width: 35%;
+  float: left;
+  font-size: 20rpx;
+  text-align: center;
+  color: #bab4a2;
+  margin-top: 15rpx;
+  margin-right: 28rpx;
+  line-height: 1.5;
+  height: 23rpx;
+}
+
+.room_onoff {
+  float: left;
+  margin-top:-6rpx;
+
+}
+
+.room_onoff {
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.room {
+  background-color: #9fd0ee;
+}
+
+.roommsg {
+  color: #f7f6f1;
+  font-size: 20rpx;
+  width: 120rpx;
+  height: 29rpx;
+  border-radius: 20rpx;
+  line-height: 1.5;
+  float: left;
+  margin-top: 10rpx;
+  margin-left: 10rpx;
+  background-color: #b1b1b196;
+}

@@ -1,0 +1,22 @@
+<!--pages/index/index.wxml-->
+<swiper current="{{currentTab}}" class="swiper-box" duration="300" bindchange="bindChange">
+  <swiper-item class="room" id='roomP1'>
+    <scroll-view scroll-y style="height: 100%;">
+      <!-- 小模块 -->
+      <view>
+        <!-- 客厅插座 (小模块) -->
+        <view wx:for='{{noopsycheData}}' wx:for-item="item" wx:for-index='indx'>
+          <view class='room_lump' id='drawing' bindtap='commBtn'>
+            <image class='room_image' src='{{item.src}}'></image>
+            <text class='room_text'>{{item.name}}</text>
+            <text class="roommsg">房间</text>
+            <text class='room_status'>{{item.status[indx+1]}}</text>
+            <image class='room_onoff' src="/img/房间与常用/tianchongxing-.png "></image>
+          </view>
+        </view>
+        <view class='room_lump' id='gate'>
+        </view>
+      </view>
+    </scroll-view>
+  </swiper-item>
+</swiper>

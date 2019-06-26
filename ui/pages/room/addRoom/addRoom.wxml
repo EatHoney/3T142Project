@@ -1,0 +1,43 @@
+<!--pages/room/addRoom/addRoom.wxml-->
+<view class='room-conation'>
+  <!-- <view class='room-img' bindtap='roomAdd'>
+    <image src='/img/房间与常用/hongwaiganyingqi.png'></image>
+    <text>添加房间</text>
+  </view> -->
+
+  <view class='room-contaion'>
+    <view class='room-body'>
+      <view class='section__title'>
+        <input type='text' class='roomInput' placeholder='请输入房间名称' bindinput="roomnameInput"></input>
+      </view>
+      <button class='room-one' form-type='submit' bindtap='sumbitRoom'>添加房间</button>
+    </view>
+  </view>
+  <view class='room-list' wx:for='{{roomNames}}' bindlongtap='bindLongTapRoom' wx:for-item='room' wx:for-index='index'>
+
+    <view id='{{index}}' class='room-Name-Mo' data-itemIndex='{{index}}' bindlongtap='showTitle' data-title='{{room.name}}'>
+      <text class='room-name'>{{room.name}}</text>
+      <block wx:if="{{room.noopsyche.length==='' || room.noopsyche.length===null || room.noopsyche.length==0 }}">
+        <text class='room-shibei'>0设备</text>
+      </block>
+      <block wx:if="{{room.noopsyche.length!=''}}">
+        <text class='room-shibei'>{{room.noopsyche.length}}设备</text>
+      </block>
+    </view>
+  </view>
+
+  <view class='operating {{operating}}'>
+    <view data-names="{{device_name}}">{{device_name}} </view>
+    <view bindtap='rename'> 重命名 </view>
+    <view bindtap='showDialogBtn'> 移除设备 </view>
+    <block wx:for="{{obj}}" wx:key>
+      <input value="{{item}}"></input>
+    </block>
+    <view bindtap='cancel'> 取消 </view>
+
+    <modal id="modal" hidden="{{hiddenmodalput}}" title="修改设备名称" confirm-text="确定" cancel-text="取消" bindcancel="cancels" bindconfirm="confirm">
+      <input class='renamei' type='text' bindinput='bindName' value="{{device_name}}" data-names="{{aname}}" />
+    </modal>
+  </view>
+
+</view>

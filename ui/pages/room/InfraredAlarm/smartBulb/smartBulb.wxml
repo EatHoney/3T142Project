@@ -1,0 +1,35 @@
+
+<view class='topTabSwiper'>
+    <view class='tab  {{currentData == 0 ? "tabBorer" : ""}}'  data-current = "0" bindtap='checkCurrent'>彩色</view>
+    <view class='tab  {{currentData == 1 ? "tabBorer" : ""}}'  data-current = "1" bindtap='checkCurrent'>白色</view>
+</view>
+
+<swiper current="{{currentData}}" class='swiper' style="height:600px;" duration="300" bindchange="bindchange">
+  <swiper-item><view class='swiper_con'>
+  
+  <color-picker class="color-picker" colorData="{{colorData}}" rpxRatio="{{rpxRatio}}" bindchangecolor="onChangeColor"></color-picker>
+<button class='box' bindtap='btnSwitch1' style="background-color:rgb({{r}},{{g}},{{b}});width:140px;height:140px;margin: 0 auto;"><image src='{{src}}' class='onoff1'></image></button>
+<!-- slider滑动条标签 data-color="r"设置属性color:'r' 这样设置的属性在触发函数的e.currentTarget.dataset中 -->
+<!-- value设置滚动条初始值 max设置滚动条区间0~255，bindchanging拖动过程中触发的事件changeing -->
+<slider data-color="r"  disabled='{{caiSeDisabled}}' value='100' max="255" bindchanging='changeing'>红色</slider>
+<slider data-color="g" disabled='{{caiSeDisabled}}' value='200' max="255" bindchanging='changeing' >绿色</slider>
+<slider data-color="b"  disabled='{{caiSeDisabled}}' value='255' max="255" bindchanging='changeing' >蓝色</slider>
+<slider  disabled='{{caiSeDisabled}}' value='50' max="100">亮度</slider>
+<slider  disabled='{{caiSeDisabled}}' value='50' max="100">速度</slider>
+  </view></swiper-item> 
+  <swiper-item><view class='swiper_con'>
+  <button bindtap='btnSwitch2' class='box2'style="width:140px;height:140px;margin: 0 auto;"><image src='{{src}}' class='onoff2'></image></button>
+<slider value='50' disabled='{{disabled}}' max="100">亮度</slider>
+  </view></swiper-item>
+</swiper>
+<view id='bottom'>
+  <view>
+    <view></view>
+    <view>遥控匹配</view>
+  </view>
+  <view>
+    <view></view>
+    <view>定时</view>
+  </view>
+</view>
+

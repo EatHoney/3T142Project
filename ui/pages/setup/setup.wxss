@@ -1,0 +1,40 @@
+page{
+    background: #f5f6fa;
+}
+font{
+  font-size: 26rpx;
+}
+image{
+  size: 60rpx;
+  width:60rpx;
+  height: 60rpx;
+  margin: 2px 0 0 2px;
+}
+button{
+  border: 0;
+  color: red;
+  display: flex;
+  height: 100rpx;
+  border-radius:0;
+  font-size: 28rpx;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+}
+
+button::after {
+  border: none;
+  border-radius: 0;
+}
+
+.arrow_wrap {
+    position: absolute;
+    width: 50px;
+    height: 45px;
+    right: 0;
+    top: 0;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAABf0lEQVRYR8XXf1XDMBAH8LvUAA72UMAkDAXgACqgyeIAFGRZBVAUgAOQMAeAAwwkxzteywtjjOZHS/9O+/30ck1ShMjLGHNSVZVxzmmt9Xvk7T+GY+wDjDHLqqqeiejFe3+ei4gGMHgPUWutd7EvMoxPAuwhqK9EEiIZUAqRBQgQHREtUiqRDegR/GVwYy6EEHXTNI9je6IIIEQAwBkA1FLKbgyiGCAVURQwIIQQHSJejKlEccBQdmstI66IaK2Usr9Nx2QADhwQANBJKetDiEkBYxCTA3rEBhHVoUrMAmDEdru9BoA7RoQ76WyAEEFEu2En/S/AvVKKKwKzAay1n31ARF/hswGCNeFb+CyAY+GTA4LwW6XUzWwL0XBwBQButKM7Y/Em5HAhxBMiLv8KLz4FseFFASnhxQBB+KlzbhVzTM/uAf5H6OccY8OzK5AbngUoEZ4MCMLfnHOXWuvXMSfgIgtR27Yr7/0DInI4N1zWH3J0E/Ydv/Her3PDuSIf9Cz/Id9OBLIAAAAASUVORK5CYII=');
+    background-repeat: no-repeat;
+    background-size: 16px;
+    background-position: 17px 14px;
+}

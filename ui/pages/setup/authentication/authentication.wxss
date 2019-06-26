@@ -1,0 +1,38 @@
+page{
+    background: #f5f6fa;
+}
+
+.authentication-graySpace{
+  background: #f5f6fa;
+  font-size: 24rpx;
+  min-height: 10rpx;
+}
+
+.authentication-graySpace2{
+  background: #f5f6fa;
+  font-size: 24rpx;
+  min-height: 100rpx;
+}
+
+.btnStyle{
+  color: #53b8ee;
+  background-color: #fff;
+  padding-right: 20rpx;
+  height: 90rpx;
+}
+
+.btnStyle2{
+  display: flex;
+  width: 600rpx;
+  height: 85rpx;
+  color: #fff;
+  font-size: 30rpx;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px 50px 50px 50px;
+  background: linear-gradient(to right, #39a1e7 , #64eede);
+}
+
+button::after {
+  border: none;
+}

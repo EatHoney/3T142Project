@@ -1,0 +1,62 @@
+<view class='main'>
+
+  <view class='img'>
+    <image src='../../../img/房间与常用/drop-copy.png'></image>
+  </view>
+  <view class='hit'>大总管智慧家</view>
+  <view class='hint'>版本1.1.0</view>
+</view>
+
+<view class='weui-cells'>
+  <view class='weui-cell'>
+    <view class='weui-cell__bd,right'>
+      官方微信
+    </view>
+    <view class='weui-cell__ft,left'>
+      智尊物联
+    </view>
+  </view>
+</view>
+
+<view class='weui-cells'>
+  <view class='weui-cell'>
+    <view class='weui-cell__bd,right'>
+      官方微信
+    </view>
+    <view class='weui-cell__ft,left'>
+      智尊物联
+    </view>
+  </view>
+  <view class='weui-cell'>
+    <view class='weui-cell__bd,right'>
+      公司名称
+    </view>
+    <view class='weui-cell__ft,left'>
+      深圳市千业企业管理有限公司
+    </view>
+  </view>
+  <view class='weui-cell'>
+    <view class='weui-cell__bd,right'>
+      公司电话
+    </view>
+    <view class='weui-cell__ft,left'>
+      0755-25609945
+    </view>
+  </view>
+  <view class='weui-cell'>
+    <view class='weui-cell__bd,right'>
+      公司网址
+    </view>
+    <view class='weui-cell__ft,left'>
+      http://www.86qy.net
+    </view>
+  </view>
+  <view class='weui-cell'>
+    <view class='weui-cell__bd,right'>
+      公司地址
+    </view>
+    <view class='weui-cell__ft,left'>
+      深圳市罗湖区洪湖二街50号新南滨大楼503
+    </view>
+  </view>
+</view>

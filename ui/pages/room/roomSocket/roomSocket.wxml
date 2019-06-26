@@ -1,0 +1,68 @@
+<view class='page__bd page__bd_spacing'>
+  <view class='weui_flex'>
+    <view class='weui-flex_item,headcolor'>
+      <view>
+        <text>插座温度</text>
+        <text>35°C正常</text>
+      </view>
+      <button class='headbtn' form-type='submit'></button>
+    </view>
+    <view class='footcolor'>
+      <view class='footcolor-font'>
+        上电默认
+      </view>
+      <button class='btn-hleft'></button>
+      <text class='footcolor-font2'>开</text>
+      <button class='btn-hright'></button>
+    </view>
+    <view class='footcolor'>
+      <view class='footcolor-font'>
+        温度上限
+      </view>
+      <button class='btn-hleft'></button>
+      <text class='footcolor-font2'>60°C</text>
+      <button class='btn-hright'></button>
+    </view>
+    <view class='footcolor'>
+      <view class='footcolor-font'>
+        过热提醒
+      </view>
+      <switch style='padding:20rpx 10rpx 0 0' bindchange="switch2Change" />
+    </view>
+    <view class='footcolor'>
+      <view class='footcolor-font'>
+        指示灯亮度
+      </view>
+      <view class="page-section gap">
+        <view class="page-section-demo">
+          <slider value="33" onChange="slider4change" min="0" max="100" backgroundColor="#d6d6d6" activeColor="#00aaee" trackSize="2" handleSize="6" handleColor="399fe5" />
+        </view>
+      </view>
+    </view>
+  </view>
+
+<view>
+  <view class='iconusecont-div1' wx:for="{{use}}" data-key='{{index}}'>
+    <view class="flex-item1"></view>
+    <rich-text class='flex-item1-font'>{{item.use_name}}</rich-text>
+  </view>
+</view>
+
+
+
+
+  <!-- <view id='bottom'>
+    <view>
+      <view bindtap='alarmSystem'></view>
+      <view>遥控匹配</view>
+    </view>
+    <view>
+      <view bindtap='systemlinkage'></view>
+      <view>时钟校准</view>
+    </view>
+    <view>
+      <view bindtap='systemlinkage'></view>
+      <view>定时</view>
+    </view>
+  </view> -->
+</view>

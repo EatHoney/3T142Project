@@ -1,0 +1,47 @@
+<view class='page__bd page__bd_spacing'>
+  <view class='weui_flex'>
+    <view class='weui-flex_item,headcolor'>
+    <view>
+    <button class='btn-hleft'></button>
+      <text class='data'>今天</text>
+    <button class='btn-hright'></button></view>
+    </view>
+    <view class='footcolor'>
+  <scroll-view scroll-y="true" style="height: 850rpx;" bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-into-view="{{toView}}" scroll-top="{{scrollTop}}">
+    <view >
+        <view>01</view>
+        <view>02</view>
+        <view>03</view>
+        <view>04</view>
+        <view>05</view>
+        <view>06</view>
+        <view>07</view>
+        <view>08</view>
+        <view>09</view>
+        <view>10</view>
+        <view>11</view>
+        <view>12</view>
+        <view>13</view>
+        <view>14</view>
+        <view>15</view>
+        <view>16</view>
+        <view>17</view>
+        <view>18</view>
+        <view>19</view>
+        <view>20</view>
+    </view>
+    </scroll-view>
+    </view>
+  </view>
+</view>
+
+<view id='bottom'>
+  <view>
+    <view bindtap='alarmSystem'></view>
+    <view>报警系统</view>
+  </view>
+  <view>
+    <view bindtap='systemlinkage'></view>
+    <view>系统联动</view>
+  </view>
+</view>

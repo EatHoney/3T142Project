@@ -1,0 +1,141 @@
+/* 背景图的样式 */
+
+.bgck {
+  width: 100%;
+  height: 100%;
+  background: url("https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1559302539823&di=c3d104c57ac4e06ccf91d252363dccc7&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2F59fbf18408c77fa0bb7180c2535abfc7c935e29a1d4cf-5e77CX_fw658")no-repeat;
+  background-size: cover;
+}
+/* 中间语音图标的样式 */
+.img {
+  width: 45px;
+  height: 45px;
+  position: fixed;
+  color: rgb(0, 0, 0, 0.5);
+  bottom: 70rpx;
+  left: 327rpx;
+}
+/* 语音字体的样式 */
+.light {
+  font-size: 14px;
+  color: white;
+  line-height: 120rpx;
+  text-align: center;
+}
+/* 底部xx的图标样式 */
+.group1 {
+  position: fixed;
+  bottom: 85rpx;
+  left: 75rpx;
+}
+/* 底部问号图标样式 */
+.group2 {
+  width: 20px;
+  height: 20px;
+  position: fixed;
+  bottom: 85rpx;
+  right: 75rpx;
+}
+/* 你可以怎么说的样式 */
+.size1 {
+  color: white;
+  font-size: 11px;
+  display: flex;
+  line-height: 170rpx;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* 中间文字的样式 */
+.size2 {
+  color: aquamarine;
+  font-size: 11px;
+  display: flex;
+  line-height: 85rpx;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* 点击显示或隐藏 */
+.isRuleShow {
+  display: block;
+}
+.isRuleHide {
+  display: none;
+}
+.ruleZhezhao {
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+
+/* 详情页的样式 */
+.ruleZhezhaoContent {
+  width: 80%;
+  height: 900rpx;
+  background: beige;
+  margin: 10% auto;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+/* 详情页xx按钮的样式 */
+.ruleHide {
+  height: 30px !important;
+  width: 30px !important;
+  position: absolute;
+  top: 5rpx;
+  right: -10rpx;
+}
+/* pages/myRecode/myRecode.wxss */
+.myRecode{
+  padding-top:500rpx;
+  text-align: center;
+  box-sizing: border-box;
+}
+.myRecode .recode{
+  display: inline-block;
+  width:200rpx;
+  height:180rpx;
+  border-radius: 50%;
+  text-align: center;
+  color:#fff;
+  line-height: 200rpx;
+  position: relative;
+}
+.ripple{
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top:-130px;
+  left:51rpx;
+  border-radius: 50%;
+  border:2px solid #F6F1CC;
+}
+.rippleAnimation1{
+  animation: ripple 1s infinite linear;
+} 
+.rippleAnimation2{
+  animation: ripple 1s infinite linear;
+  animation-delay:0.3s;
+} 
+.rippleAnimation3{
+  animation: ripple 1s infinite linear;
+  animation-delay:0.6s;
+} 
+@keyframes ripple{
+  from{
+    opacity: 1;
+    transform: scale(1,1)
+  }
+  to{
+    opacity: 0;
+    transform: scale(2,2)
+  }
+}

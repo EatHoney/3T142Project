@@ -1,0 +1,83 @@
+/* communal/light/index2/index2.wxss */
+
+.title {
+  text-align: center;
+  font-size: 50rpx;
+  font-weight: bold;
+}
+
+.head {
+  /* border: 1px solid saddlebrown; */
+  background-color: rgb(235, 230, 227);
+  display: flex;
+  padding: 10rpx 0;
+  margin: 20rpx 0;
+}
+
+.info_image {
+  /* flex: 3; */
+  width: 85rpx;
+  height: 85rpx;
+  margin-left: 10rpx;
+}
+
+.head text {
+  /* flex: 1; */
+  margin-left: 321rpx;
+  font-size: 32rpx;
+  color: #000;
+}
+
+.base {
+  font-size: 32rpx;
+  background-color: rgb(235, 230, 227);
+}
+
+/*
+.base view{
+  display: flex; */
+
+/* padding: 10rpx; */
+
+/* align-items: center; */
+
+/* justify-content: center; */
+
+/* }
+
+.base view:first-child{
+  border-bottom: 0.5px solid #ccc;
+}
+
+.base view text:last-child{
+  position: absolute;
+  right: 10rpx;
+ 
+  color: #000;
+} */
+
+.right {
+  position: absolute;
+  right: 28rpx;
+}
+
+.eventual {
+  border-top: 1px solid #ccc;
+  padding: 12px 0;
+}
+
+.one {
+  padding-top: 12px;
+  margin-bottom: 50px;
+  margin-top: -5px;
+  /* padding: 5px; */
+}
+
+.left {
+  margin-left: 10px;
+}
+
+.leftOne {
+  position: absolute;
+  top: 115px;
+}

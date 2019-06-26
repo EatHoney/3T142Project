@@ -1,0 +1,80 @@
+/* pages/room/gateway/gateway.wxss */
+
+page {
+  background-color: #4bd865;
+  color: #fff;
+}
+
+#title {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  color: #fff;
+  background-color: #d5d5da;
+  font-size: 30rpx;
+  padding: 10rpx;
+}
+
+#top {
+  border: 1rpx #fff solid;
+  background-color: #fff;
+  margin: 20rpx;
+  height: 1140rpx;
+  border-radius: 20rpx;
+}
+
+#top .logImg {
+  margin: 100rpx 0 80rpx 0;
+}
+
+.logImg view {
+  margin: 0 auto;
+  width: 420rpx;
+  height: 420rpx;
+  border: 1rpx #4bd865 solid;
+  background-color: #ecf4ee;
+}
+
+.middle {
+  width: 100%;
+  border-radius: 20rpx;
+}
+
+.middle>view {
+  font-size: 35rpx;
+  float: left;
+  width: 49%;
+  color: #646464;
+  text-align: center;
+  padding: 10rpx 0 10rpx 0;
+  margin-top: 77rpx;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.middle>view view:last-of-type {
+  font-size: 25rpx;
+  color: #919191;
+}
+
+#bottom {
+  float: left;
+  margin: 0 auto;
+}
+
+#bottom>view {
+  width: 120rpx;
+  height: 125rpx;
+  float: left;
+  color: #858585;
+  font-size: 24rpx;
+  text-align: center;
+  margin-left: 45rpx;
+  margin-top: 45rpx;
+}
+
+#bottom>view view:first-child {
+  border: rpx #e7e7e7 solid;
+  width: 100%;
+  height: 120rpx;
+  border-radius: 50%;
+}

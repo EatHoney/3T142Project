@@ -1,0 +1,46 @@
+/* pages/common/common.wxss */
+/*定位到右上角*/
+#d{
+display:flex; flex-direction:row-reverse;}
+#zong{
+  width: 100%;
+  height: 100%
+}
+.wawa{
+  margin-top: 0px;
+  padding: 0px;
+  background-color:red;
+  width:20px;
+  height: 20px; 
+  position:relative;
+  right:-167px; 
+  top:0px;
+  font-size: 10px;
+}
+.fenkai{
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  background: #ccc;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  font-size: 15px;
+  
+}
+.bb{
+  background: orange;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-left: 10px;
+  height: 55px;
+}
+.zenge{
+  border-radius:10px; 
+  /* border-radius ：30px */
+}
+.kaiguan{
+  font-size: 11px;
+}
+.tu{
+  font-size: 20px;
+}

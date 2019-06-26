@@ -1,0 +1,26 @@
+<!--pages/common/common.wxml-->
+
+<view class="zong">
+
+  <view id="d" align="right" style="margin-top:0px">
+    <button class="wawa" bindtouchstart="mytouchstart" bindtouchend="mytouchend" bindtap="mytap">十 </button>
+  </view>
+
+</view>
+
+
+
+<view wx:for='{{setingTimes}}' wx:key="" wx:for-item='tiems' wx:for-index='index'>
+  <view bindtap="uptiem"  data-index='{{index}}'>
+    <view class='zenge'>
+      <view class='bb'>
+        <view class='tu'>{{tiems.time}}</view>
+        <view class='kaiguan'>设备：{{tiems.onoff}}</view>
+      </view>
+    </view>
+    <view class="fenkai ">
+      <text>周{{tiems.week}} </text>
+      <switch bindchange='change'></switch>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,14 @@
+<!--pages/room/gateway/details/details.wxml-->
+<view id='detop'>
+<view>
+<view></view>
+</view>
+<view>安防网关-530</view>
+<view>SN:0084F3EBB80530</view>
+</view>
+
+
+<view id='debottom' bindtap="that_room">
+<view>所在房间</view> 
+<view>体验馆  ></view>
+</view>

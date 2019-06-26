@@ -1,0 +1,31 @@
+page{
+      background: #f5f6fa;
+}
+.fx-zx{
+  width: 100%;
+  float: left; 
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around; 
+}
+.fx-zx_child{
+  width: 33%;
+  height: 200rpx;
+  padding-top: 20rpx;
+}
+.fx-zx button{
+  border: none;
+  width: 200rpx;
+  height: 200rpx;
+  background-color: #fff;
+  box-shadow:1px 1px 1px 1px #dae0ec;
+}
+.fx-zx image{
+  width: 60rpx;
+  height: 60rpx;
+  padding: 20rpx 0 0 0;
+}
+view{
+  font-size: 10px;
+}

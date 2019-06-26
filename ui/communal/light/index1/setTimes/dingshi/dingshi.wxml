@@ -1,0 +1,24 @@
+
+<view class='lj'>
+  <button class="korg"  bindtap="ka">定时{{setingTimes[index2].onoff}}</button>
+</view>
+<view class="section open">
+  <picker mode="time" value="{{time}}" start="00:00" end="23:59" bindchange="bindopenTimeChange">
+    <view class="picker">
+      时间 : {{setingTimes[index2].time}}
+    </view>
+  </picker>
+</view>
+<view class='jkls'>
+  <view style="text-align:center;">
+    <switch bindchange='changeTap'>定时重复</switch>
+  </view>
+  <view class="dingshi">
+  <view wx:for="{{weeks}}" wx:for-itme="items" wx:for-index="index" >
+   <view bindtap='as' class="{{flag ? 'setweek_1':'setweek_2'}} " data-week='{{week}}'>{{weeks[index].week}}</view>
+  </view>
+   
+  </view>
+</view>
+<!-- 测试 -->
+<button class="butt" bindtap="bababa">确定</button>

@@ -1,0 +1,130 @@
+page{
+  background: #f5f6fa;
+}
+
+.data{
+  font-size: 30rpx;
+  color: #128fe3;
+}
+
+.headimg{
+  padding: 0;
+  width: 260rpx;
+  height: 260rpx;
+}
+
+.headcolor{
+  border-radius: 20rpx 20rpx 0 0;
+  margin:0 20rpx 0 20rpx; 
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100rpx;
+}
+
+.footcolor{
+  margin:5rpx 20rpx 0 20rpx; 
+  border-radius: 0 0 20rpx 20rpx;
+  background-color: white;
+  text-align: center;
+  font-size: 30rpx;
+  height: 850rpx;
+  color: #abbaca;
+}
+
+.btn-hleft{
+    position: absolute;
+    width: 50px;
+    height: 45px;
+    left: 150rpx;
+    background-color: #FFf;
+    top: 0;
+}
+
+.btn-hright{
+    position: absolute;
+    width: 50px;
+    height: 45px;
+    right: 150rpx;
+    background-color: #FFf;
+    top: 0;
+}
+
+button::after{ 
+  border: none;
+  border-radius: 0;
+}
+
+
+#bottom {
+float: left;
+margin: 0 auto;
+}
+
+#bottom>view {
+width: 120rpx;
+height: 125rpx;
+float: left;
+color: #858585;
+font-size: 24rpx;
+text-align: center;
+margin-left: 175rpx;
+margin-top: 45rpx;
+}
+
+#bottom>view view:first-child {
+background-color: #fff;
+border: 3rpx solid #e6e6e6;
+width: 100%;
+height: 120rpx;
+border-radius: 50%;
+}
+.deviceInformation{
+  font-size: 30rpx;
+  color: #128fe3;
+}
+ #bottom{
+   position: absolute;
+   bottom: 80rpx;
+ }
+.tab{
+  float: left;
+   width: 50%;
+   text-align: center;
+   padding: 20rpx 0;
+   }
+.topTabSwiper{border-top: 1px solid #ccc; border-bottom: 1px solid #ccc; zoom: 1;}
+.topTabSwiper:after{content: ""; clear: both;display: block;}
+.tabBorer{border-bottom: 1px solid #f00; color: #f00;}
+.swiper{width: 100%;}
+.swiper_con{text-align: center; width: 100%; height: 100%; padding: 80rpx 0;}
+.box{
+  border: 1px solid transparent;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: -20px;
+
+}
+.onoff1{
+  margin: 0 auto;
+  width:140px;
+  height:140px;
+ margin-left:-15px;
+}
+
+.onoff2{
+  margin: 0 auto;
+  width:140px;
+  height:140px;
+ margin-left:-15px;
+}
+.box2{
+  border: 1px solid transparent;
+  border-radius: 50%;
+  margin: 0 auto;
+  margin-top: -20px;
+ 
+}

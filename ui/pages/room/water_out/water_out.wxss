@@ -1,0 +1,83 @@
+page{
+  background: #f5f6fa;
+}
+
+.data{
+  font-size: 30rpx;
+  color: #128fe3;
+  
+}
+ 
+.headcolor{
+  border-radius: 20rpx 20rpx 0 0;
+  margin:0 20rpx 0 20rpx; 
+  background-color: white;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100rpx;
+}
+
+.footcolor{
+  margin:5rpx 20rpx 0 20rpx; 
+  border-radius: 0 0 20rpx 20rpx;
+  background-color: white;
+  text-align: center;
+  font-size: 30rpx;
+  height: 850rpx;
+  color: #abbaca;
+}
+
+.btn-hleft{
+    position: absolute;
+    margin-top: 20rpx;
+    width: 60rpx;
+    height: 64rpx;
+    left: 150rpx;
+    background-color: #FFf;
+    top: 0;
+    background-image: url('https://upload-images.jianshu.io/upload_images/15733580-6ad2b8526b69b12a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240');
+}
+
+.btn-hright{
+    position: absolute;
+    margin-top: 20rpx;
+    width: 60rpx;
+    height: 64rpx;
+    right: 150rpx;
+    background-color: #FFf;
+    top: 0;
+    background-image: url('https://upload-images.jianshu.io/upload_images/15733580-c9933807acff9a97.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240');
+}
+
+button::after{ 
+  border: none;
+  border-radius: 0;
+}
+
+
+#bottom {
+float: left;
+margin: 0 auto;
+}
+
+#bottom>view {
+width: 120rpx;
+height: 125rpx;
+float: left;
+color: #858585;
+font-size: 24rpx;
+text-align: center;
+margin-left: 175rpx;
+margin-top: 45rpx;
+}
+
+#bottom>view view:first-child {
+background-color: #fff;
+border: 3rpx solid #e6e6e6;
+width: 100%;
+height: 120rpx;
+border-radius: 50%;
+}

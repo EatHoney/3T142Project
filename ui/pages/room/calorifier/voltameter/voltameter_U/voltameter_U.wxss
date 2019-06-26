@@ -1,0 +1,21 @@
+/* pages/room/calorifier/voltameter/voltameter_U/voltameter_U.wxss */
+
+page {
+  background-color: rgb(245, 246, 250);
+}
+
+input {
+  width: 100%;
+  margin: 0 30rpx;
+  height: 90rpx;
+  background-color: #fff;
+  border-radius: 15rpx;
+}
+
+button {
+  width: 95%;
+  margin: 0 10rpx;
+  position: fixed;
+  margin-bottom: 35rpx;
+  bottom: 0;
+}

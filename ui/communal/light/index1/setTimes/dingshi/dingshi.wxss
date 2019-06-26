@@ -1,0 +1,73 @@
+#biaoti {
+  text-align: center;
+  padding: 100px;
+}
+
+.lj {
+  text-align: center;
+}
+
+.korg {
+  height: 75rpx;
+  width: 190rpx;
+  text-align: center;
+  font-size: 13px;
+}
+
+.section {
+  background: #cabbc7;
+  margin: 20rpx;
+  padding: 20rpx;
+}
+
+.open {
+  background: #ccc;
+}
+
+.setweek_1 {
+  background-color: #509fc9;
+  height: 65rpx;
+  width: 65rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60rpx;
+  color: #fff;
+  font-weight: bold;
+}
+
+.setweek_2 {
+  background-color: #ccc;
+  height: 65rpx;
+  width: 65rpx;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 60rpx;
+  color: #fff;
+  font-weight: bold;
+}
+
+.dingshi {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: relative;
+  left: 0px;
+  top: 30px;
+}
+
+.jkls {
+  position: relative;
+  left: 0px;
+  top: 60px;
+}
+
+.butt {
+  height: 10%;
+  width: 20%;
+  background: #ccc;
+  position: relative;
+  top: 300px;
+  text-align: center；;
+}
+
+/* 测试时代码 */

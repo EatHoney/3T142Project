@@ -1,0 +1,17 @@
+<!--communal/light/index2/index2.wxml-->
+<view class='title'> 设备信息</view>
+<view class='head'>
+  <image class='info_image' src='../../../img/房间与常用/drop-copy.png'></image>
+  <text decode='emsp'>&nbsp;  &nbsp;  &nbsp; {{title}}\n SN:03525301045078</text>
+</view>
+
+<view class='base'>
+  <view class='one'>
+    <text class='left leftOne'>所在网关</text>
+    <text decode='emsp' class='right'>&nbsp;安防网关-530 \n 0084F3EBB80530</text>
+  </view>
+  <view class='eventual'  bindtap="address">
+    <text class='left'>所在房间</text>
+    <text decode='emsp' class='right'>{{address}} &nbsp; &gt;</text>
+  </view>
+</view>

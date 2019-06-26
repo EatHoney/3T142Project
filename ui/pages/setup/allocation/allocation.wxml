@@ -1,0 +1,7 @@
+<view class='fx-zx'>
+  <view class='fx-zx_child'><button plain="{{plain}}"><image src='../../../img/设置页面/配置设备/saomiao.png'></image><view>扫描添加</view></button></view>
+  <view class='fx-zx_child'><button plain="{{plain}}"><image src='../../../img/设置页面/配置设备/ziyuan.png'></image><view>蓝牙配置</view></button></view>
+  <view class='fx-zx_child'><button plain="{{plain}}"><image src='../../../img/设置页面/配置设备/wifi2.png'></image><view>配置WIFI设备</view></button></view>
+  <view class='fx-zx_child'><button plain="{{plain}}"><image src='../../../img/设置页面/配置设备/wangguanx.png'></image><view>智能安防网关YH-WA700</view></button></view>
+  <view class='fx-zx_child'><button plain="{{plain}}"><image src='../../../img/设置页面/配置设备/kaiguan.png'></image><view>增强网关</view></button></view>
+</view>
